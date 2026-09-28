@@ -1,0 +1,150 @@
+body {
+    background-color: whitesmoke;
+    color: black;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(3, 30, 98);
+    color: whitesmoke;
+    padding: 10px 30px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: gold;
+    background-color: whitesmoke;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-bar input {
+    padding: 5px;
+}
+
+.search-bar button {
+    background-color: gold;
+    border: none;
+    padding: 6px 10px;
+}
+
+h1, h2 {
+    color: blue;
+}
+
+main {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 1100px;
+}
+
+section {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+}
+
+/* About */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-image {
+    width: 40%;
+}
+
+.about-text {
+    width: 60%;
+}
+
+/* Skills */
+dt {
+    font-weight: bold;
+    color: rgb(3, 30, 98);
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+/* Education */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th {
+    background-color: gold;
+}
+
+/* Projects */
+article {
+    border-bottom: 2px solid gold;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+/* Contact */
+input, textarea {
+    padding: 8px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(3, 30, 98);
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+
+footer img {
+    margin: 5px;
+}
