@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 
     <title>Aabash Khadka Portfolio</title>
 </head>
@@ -14,19 +14,18 @@
 
     <!-- Header -->
     <header>
-
         <div class="header-container">
 
             <!-- Logo -->
             <div class="logo">
-                <img src="images/Logo.png" alt="Aabash Khadka Logo">
+                <img src="./images/Logo.png" alt="Aabash Khadka Logo">
             </div>
 
             <!-- Navigation -->
             <div class="nav-bar">
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#education">Education</a></li>
@@ -39,12 +38,11 @@
             <!-- Search -->
             <div class="search-bar">
                 <label for="search">Search</label>
-                <input type="text" id="search" placeholder="Search">
+                <input type="text" id="search" name="search" placeholder="Search">
                 <button type="button">Search</button>
             </div>
 
         </div>
-
     </header>
 
 
@@ -64,12 +62,13 @@
 
                 <!-- Profile Image -->
                 <div class="about-image">
-                    <img src="images/profile.png" width="150" alt="Aabash Khadka">
+                    <img src="./images/profile.png"
+                         width="150"
+                         alt="Aabash Khadka Profile">
                 </div>
 
                 <!-- About Text -->
                 <div class="about-text">
-
                     <p>
                         Hello, I am Aabash Khadka.
                         I am an IT student interested in technology,
@@ -81,7 +80,6 @@
                         developing simple projects using HTML,
                         CSS, programming, and database technologies.
                     </p>
-
                 </div>
 
             </div>
@@ -96,7 +94,7 @@
 
             <dl>
 
-                <dt>Programming Language</dt>
+                <dt>Programming Languages</dt>
                 <dd>Python, JavaScript</dd>
 
                 <dt>Database</dt>
@@ -120,29 +118,35 @@
 
             <table>
 
-                <tr>
-                    <th>Level</th>
-                    <th>Institution</th>
-                    <th>Year</th>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
 
-                <tr>
-                    <td>Secondary</td>
-                    <td>Global School</td>
-                    <td>2022</td>
-                </tr>
+                <tbody>
 
-                <tr>
-                    <td>Higher Secondary</td>
-                    <td>Liverpool International College</td>
-                    <td>2024</td>
-                </tr>
+                    <tr>
+                        <td>Secondary</td>
+                        <td>Global School</td>
+                        <td>2022</td>
+                    </tr>
 
-                <tr>
-                    <td>Bachelor</td>
-                    <td>Model Institute of Technology</td>
-                    <td>2026-Present</td>
-                </tr>
+                    <tr>
+                        <td>Higher Secondary</td>
+                        <td>Liverpool International College</td>
+                        <td>2024</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bachelor</td>
+                        <td>Model Institute of Technology</td>
+                        <td>2026-Present</td>
+                    </tr>
+
+                </tbody>
 
             </table>
 
@@ -154,8 +158,8 @@
 
             <h2>My Projects</h2>
 
+            <!-- Project 1 -->
             <article>
-
                 <h3>E-Commerce Website</h3>
 
                 <p>
@@ -164,11 +168,16 @@
                     and place orders online.
                 </p>
 
+                <a href="https://github.com/aabashkhadka1-arch"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View My Project
+                </a>
             </article>
 
 
+            <!-- Project 2 -->
             <article>
-
                 <h3>Learning Management System</h3>
 
                 <p>
@@ -177,11 +186,16 @@
                     and other educational resources online.
                 </p>
 
+                <a href="https://github.com/aabashkhadka1-arch"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View My Project
+                </a>
             </article>
 
 
+            <!-- Project 3 -->
             <article>
-
                 <h3>Restaurant Management System</h3>
 
                 <p>
@@ -190,19 +204,29 @@
                     and sales records.
                 </p>
 
+                <a href="https://github.com/aabashkhadka1-arch"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View My Project
+                </a>
             </article>
 
 
+            <!-- Project 4 -->
             <article>
-
                 <h3>Personal Portfolio Website</h3>
 
                 <p>
                     This personal portfolio website presents my
                     education, skills, projects, interests, and
-                    contact information using HTML.
+                    contact information using HTML and CSS.
                 </p>
 
+                <a href="https://github.com/aabashkhadka1-arch"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View My Project
+                </a>
             </article>
 
         </section>
@@ -216,12 +240,12 @@
             <form>
 
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
 
                 <br><br>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
 
                 <br><br>
 
@@ -229,7 +253,11 @@
 
                 <br>
 
-                <textarea id="message" name="message"></textarea>
+                <textarea id="message"
+                          name="message"
+                          rows="5"
+                          cols="30"
+                          required></textarea>
 
                 <br><br>
 
@@ -247,23 +275,29 @@
 
         <h3>Follow Me</h3>
 
-        <a href="https://github.com/aabashkhadka1-arch">
-            <img src="images/github.png" width="40" alt="GitHub">
+        <a href="https://github.com/aabashkhadka1-arch"
+           target="_blank"
+           rel="noopener noreferrer">
+            <img src="./images/github.png" width="40" alt="GitHub">
         </a>
 
-        <a href="https://www.linkedin.com/in/aabash-khadka-074766427">
-            <img src="images/linkedin.png" width="40" alt="LinkedIn">
+        <a href="https://www.linkedin.com/in/aabash-khadka-074766427"
+           target="_blank"
+           rel="noopener noreferrer">
+            <img src="./images/linkedin.png" width="40" alt="LinkedIn">
         </a>
 
-        <a href="https://www.instagram.com/abashkhadka">
-            <img src="images/instagram.png" width="40" alt="Instagram">
+        <a href="https://www.instagram.com/abashkhadka"
+           target="_blank"
+           rel="noopener noreferrer">
+            <img src="./images/instagram.png" width="40" alt="Instagram">
         </a>
 
         <a href="mailto:aabashkhadka1@gmail.com">
-            <img src="images/gmail.png" width="40" alt="Gmail">
+            <img src="./images/gmail.png" width="40" alt="Gmail">
         </a>
 
-        <p>© 2026 Aabash Khadka</p>
+        <p>&copy; 2026 Aabash Khadka. All rights reserved.</p>
 
     </footer>
 
