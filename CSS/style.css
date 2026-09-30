@@ -1,14 +1,23 @@
+/* ========================================
+   General
+   ======================================== */
+
 body {
-    background-color: whitesmoke;
-    color: black;
+    background-color: #f5f7fa;
+    color: #1f2937;
     line-height: 1.6;
     font-family: 'Segoe UI', Roboto, sans-serif;
     margin: 0;
 }
 
+
+/* ========================================
+   Header
+   ======================================== */
+
 header {
-    background-color: rgb(3, 30, 98);
-    color: whitesmoke;
+    background-color: #031e62;
+    color: #ffffff;
     padding: 10px 30px;
 }
 
@@ -18,11 +27,10 @@ header {
     align-items: center;
 }
 
-.logo img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
+
+/* ========================================
+   Navigation
+   ======================================== */
 
 nav ul {
     list-style: none;
@@ -34,16 +42,33 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: whitesmoke;
+    color: #ffffff;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: gold;
-    background-color: whitesmoke;
-    padding: 0.5rem;
-    border-radius: 5px;
+    color: #f4b400;
+    background-color: transparent;
 }
+
+
+/* ========================================
+   Logo
+   ======================================== */
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #f4b400;
+}
+
+
+/* ========================================
+   Search
+   ======================================== */
 
 .search-bar {
     display: flex;
@@ -52,18 +77,56 @@ nav a:hover {
 }
 
 .search-bar input {
-    padding: 5px;
+    padding: 7px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-bar input:focus {
+    border-color: #2563eb;
 }
 
 .search-bar button {
-    background-color: gold;
+    background-color: #f4b400;
+    color: #031e62;
     border: none;
-    padding: 6px 10px;
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-h1, h2 {
-    color: blue;
+.search-bar button:hover {
+    background-color: #d99d00;
 }
+
+
+/* ========================================
+   Headings
+   ======================================== */
+
+h1,
+h2 {
+    color: #031e62;
+}
+
+h1 {
+    width: fit-content;
+    padding-bottom: 0.6rem;
+    font-size: 2rem;
+}
+
+h2 {
+    border-bottom: 3px solid #f4b400;
+    padding-bottom: 5px;
+}
+
+
+/* ========================================
+   Main
+   ======================================== */
 
 main {
     margin: 2rem auto;
@@ -71,15 +134,29 @@ main {
     max-width: 1100px;
 }
 
-section {
-    background-color: whitesmoke;
+
+/* ========================================
+   Sections
+   ======================================== */
+
+.about-container,
+.Skills-container,
+.contact-container,
+.Education-container,
+.projects-container,
+.social-Media-container {
+    background-color: #ffffff;
     border-radius: 10px;
     padding: 2rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(3, 30, 98, 0.12);
     margin-bottom: 2rem;
 }
 
-/* About */
+
+/* ========================================
+   About
+   ======================================== */
+
 .about-container {
     display: flex;
     justify-content: space-between;
@@ -95,41 +172,111 @@ section {
     width: 60%;
 }
 
-/* Skills */
+.about-container img {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(3, 30, 98, 0.2);
+    border: 3px solid #f4b400;
+}
+
+
+/* ========================================
+   Skills
+   ======================================== */
+
 dt {
     font-weight: bold;
-    color: rgb(3, 30, 98);
+    color: #031e62;
 }
 
 dd {
     margin-bottom: 10px;
+    color: #4b5563;
 }
 
-/* Education */
+
+/* ========================================
+   Education
+   ======================================== */
+
 table {
     width: 100%;
     border-collapse: collapse;
 }
 
-th, td {
-    border: 1px solid black;
+th,
+td {
+    border: 1px solid #d1d5db;
     padding: 10px;
+    text-align: left;
 }
 
 th {
-    background-color: gold;
+    background-color: #031e62;
+    color: #ffffff;
 }
 
-/* Projects */
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tr:hover {
+    background-color: #fff8dc;
+}
+
+
+/* ========================================
+   Projects
+   ======================================== */
+
+.projects-container article {
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(3, 30, 98, 0.12);
+    padding: 15px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 article {
-    border-bottom: 2px solid gold;
+    border-bottom: 2px solid #f4b400;
     padding-bottom: 15px;
     margin-bottom: 20px;
 }
 
-/* Contact */
-input, textarea {
+article a {
+    font-size: 1rem;
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+article a:hover {
+    color: #031e62;
+    text-decoration: underline;
+}
+
+.projects-container article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(3, 30, 98, 0.18);
+}
+
+
+/* ========================================
+   Contact
+   ======================================== */
+
+input,
+textarea {
     padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
 }
 
 textarea {
@@ -137,14 +284,86 @@ textarea {
     height: 100px;
 }
 
-/* Footer */
+
+/* ========================================
+   Footer
+   ======================================== */
+
 footer {
-    background-color: rgb(3, 30, 98);
-    color: whitesmoke;
+    background-color: #031e62;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
+    border-top: 4px solid #f4b400;
 }
 
 footer img {
     margin: 5px;
 }
+
+
+/* ========================================
+   Mobile Devices
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image,
+    .about-text {
+        width: 100%;
+    }
+
+    main {
+        padding: 0.5rem;
+    }
+
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .search-bar {
+        margin-top: 10px;
+    }
+
+}
+
+
+/* ========================================
+   Tablet Devices
+   ======================================== */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image,
+    .about-text {
+        width: 100%;
+    }
+
+}s
